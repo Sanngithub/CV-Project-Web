@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #FFF;
+    font-family: 'Poppins', sans-serif;   
+}
+
+/* HEADER / BAR MENU */
+header {
+    position: fixed;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    justify-content : space-between;
+    background: #FFF;
+    box-shadow: -0 2px 0.5em black;
+    z-index: 1;    
+    animation: none;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    
+}
+
+nav li {
+    font-variant: small-caps;
+    display: inline;
+    max-width: 1100px;
+    padding: 40px 10px;
+    margin: 20px 10px;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color:black;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+a.lecture {
+    color: gray;
+}
+
+
+/* BOUTON "MAISON" DANS BARRE NAVIGATION */
+.home {
+    height: 25px;
+    width: 25px;
+    position: relative;
+    top: 10px;
+}
+
+.home:hover {
+    background:lightgray;
+    border-radius: 10%;
+    transition: all 700ms ease;
+}
+
+
+nav a:hover {
+    background:lightgray;
+    border-radius: 10%;
+    transition: all 700ms ease;
+  
+}
+
+
+/* MES SECTIONS ET DETAILS */
+
+.section-none {
+    display: none;
+}
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+section .section {
+    margin: 45px 0px;
+}
+
+section:nth-child(1) {
+    color: #fff;
+    background-image: url(images/imageB.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+section:nth-child(2) {
+    color: #1F1F1E;
+    background: #fff;
+}
+
+section:nth-child(2) .paragraphe {
+    font-size: 1.2em;
+}
+
+
+section h1{
+    font-size: 75px;
+    text-align: center;
+    text-shadow: 5px 5px 2px black;
+    opacity: 0.8;
+    animation: slidein 2s;
+}
+
+section h2 {
+    font-size: 45px;
+    text-align: center;
+    margin: 40px 0px;
+    
+}
+
+section .ligne {
+    display: flex; 
+    justify-content: center;
+}
+
+section .ligne .colonne {
+    background: #fff ;
+    margin: 20px;
+    padding: 20px;
+    /* text-align:justify; */
+    border-radius: 10px;   
+    box-shadow: 2px 2px 2px 2px white;
+    border: 1px solid lightgray;
+    transition: all 0.2s ease;
+}
+
+section .ligne .colonne_size {
+    max-width: 25%;
+    background: linear-gradient(50deg, lightyellow, lightgray);
+    
+}
+
+section .ligne .colonne1 {
+    margin: 5px;
+    padding: 20px 10px;
+    text-align:left;
+    border-radius: 10px;   
+     
+}
+
+section .ligne .colonne2 {
+    width: 900px;
+    text-align: justify;
+    padding: 10px;
+    margin: 0px 10px;
+
+}
+
+section .ligne .colonne_rea {
+   padding: 1px;
+}
+
+section .ligne .colonne:hover {
+    box-shadow: 0 0 25px #515151
+}
+
+section .ligne ._colonnephoto {
+    margin: 0px 10px;
+    padding: 3px;
+}
+section .ligne ._colonnephoto .photo-id {
+    border: 2px solid lightgray;
+    border-radius: 10%;
+    height: 280px;
+    position: relative;
+    top: 3px;
+}
+
+
+section .ligne .colonne h3 {
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+ section .ligne .colonne_BG {
+    background-position: center;
+    background-size: cover;
+    min-width: 250px;
+    height: 250px;
+    flex: 1;
+}
+
+section .ligne .colonne_BG h3 {
+    color: black;
+    background: #fff;
+    border-radius: 20px;
+} 
+
+section .ligne .colonne_rea h3 {
+    background-color: lightgray;
+    text-align: left;
+
+}
+
+section .ligne .colonne_BG .lowercase {
+    text-transform: lowercase;
+    font-size: 0.8em;
+}
+
+section .ligne .colonne_rea h3 {
+    background-color: lightgray;
+    text-align: left;
+
+}
+
+
+/* PARTIE CENTRE INTÉRET */
+.colonne_left {
+    width: 45%;
+    box-shadow: 2px 2px 2px 2px white;
+    transition: all 0.2s ease;
+}
+.colonne_right {
+    width: 45%;
+    box-shadow: 2px 2px 2px 2px white;
+    transition: all 0.2s ease;
+}
+
+.left_one {
+    background: lightgray;
+}
+
+.right_one {
+    background: lightyellow;
+}
+
+
+/* TABLEAU DANS PARTIE CENTRE INTÉRET */
+
+table {
+    text-align     : center;
+    caption-side   : bottom;
+    /*table-layout : fixed; ******************************************* */
+    width          : 500px;
+    border-collapse: collapse;
+    border         : 3px solid black;
+    width: auto;
+}
+
+tbody {
+    font-size: 1.2em;
+}
+
+caption {
+    font-size: 1.2em;
+}
+
+th {
+    background-color: #fff;
+    color           : black;
+    border          : 3px solid black;
+
+}
+
+td {
+    background-color: #fff;
+    color           : black;
+    border          : 1px solid black;
+}
+
+
+
+/* MES DIFFÉRENTS FONDS D'IMAGES */
+section .ligne .colonne_web {
+    background-image: url(images/image_htmlcss.png);
+}
+
+section .ligne .colonne_python {
+    background-image: url(images/image_python3.jpg);
+} 
+
+section .ligne .colonne_java {
+    background-image: url(images/image_java.jpg);
+} 
+
+section .ligne .colonne_c2i {
+    background-image: url(images/image_c2i.jpg);
+} 
+
+section .ligne .background_web {
+    background-image: url(images/imageB.jpg);
+} 
+
+section .ligne .background_algo {
+    background-image: url(images/image_python_rea.jfif);
+} 
+
+section .ligne .background_cplus {
+    background-image: url(images/image_cplus_rea.jfif);
+} 
+
+section .ligne .background_web_dyna {
+    background-image: url(images/image_dyna_rea.png);
+} 
+
+section .ligne .background_others {
+    max-width: 600px;
+    background: linear-gradient(50deg, lightyellow, lightgray);
+  
+} 
+
+.bulle_rea {
+    background-color: lightgray;
+    border-radius: 10px;
+    padding: 5px;
+    opacity: 0.7;
+}
+
+/* ANIMATION LOADING */
+.loading {
+    padding-left: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.loader{
+    position: relative;
+    top: 80px;
+    transform: translate(-50%,-50%);
+    display: flex;
+}
+
+.loader li {
+    list-style: none;
+    width: 6px;
+    height: 20px;
+    background:#262626;
+    margin: 0px 4px;
+    animation: animate .7s infinite alternate;
+}
+
+.loader li:nth-child(1) {
+    animation-delay: .1s;
+}
+.loader li:nth-child(2) {
+    animation-delay: .2s;
+}
+.loader li:nth-child(3) {
+    animation-delay: .3s;
+}
+.loader li:nth-child(4) {
+    animation-delay: .4s;
+}
+.loader li:nth-child(5) {
+    animation-delay: .5s;
+}
+
+
+/* BOUTON "JAUNE" SCROLL VERS LE BAS */
+figure {
+    position: absolute;
+}
+
+figure .scroll-down {
+    height: 60px;
+    margin-top: 200px;
+    opacity: 0.7;
+    /* animation: slidein 2s; -- pas obligatoire --*/ 
+}
+
+
+.image_colonne {
+    height: 50px;
+}
+
+
+/* ICONES RÉSEAUX */ 
+.icon {
+    height: 65px;
+    padding: 10px;
+}
+
+.icon-call {
+   height: 30px;
+   position: relative;
+   top: 3px;
+}
+
+.icon-mail {
+    height: 20px;
+    position: relative;
+    top: 4px;
+}
+
+.icon_download {
+    height: 20px;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #fff;
+    display: flex;
+    font-weight: 500;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+
+}
+
+.copyright {
+    position: relative;
+    margin-left: 30px;
+    color: black;
+}
+
+
+.date {
+    position: relative;
+    margin-bottom: 25px;
+    margin-right: 30px;
+    text-decoration: none;
+    color: black ;
+}
+
+
+/* AUTRES */ 
+a.conversation {
+    text-decoration: none;
+    color: black;
+}
+
+.liste_hobbie {
+    list-style-type: none;
+}
+
+.gras{
+    font-weight: bold;
+}
+
+label, #toggle
+{
+    display: none;
+}
+
+
+
+/* ANIMATION KEYFRAMES */
+
+@keyframes slideshow {
+    from {
+        transform: translateY(1000px)
+    }
+
+    to {
+        transform: translateY(0)
+    }
+}
+
+
+@keyframes slidein {
+
+    0% {
+        transform: scaleX(0);
+    }
+
+    100% { 
+        transform: scaleX(1);
+    }
+}
+
+@keyframes animate {
+
+    0% {
+        transform: scaleY(1);
+    }
+    25% {
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(1);
+    }
+    75% {
+        transform: scaleY(1);
+    }
+    100% {
+        transform: scaleY(3);
+    }
+}
