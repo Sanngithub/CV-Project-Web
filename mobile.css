@@ -333,11 +333,19 @@ section .ligne .colonne_python {
 } 
 
 section .ligne .colonne_java {
-    background-image: url(images/image_java.jpg);
+    background-image: url(images/image_JAVA.png);
 } 
 
-section .ligne .colonne_c2i {
-    background-image: url(images/image_c2i.jpg);
+section .ligne .colonne_php {
+    background-image: url(images/image_php.jpg);
+} 
+
+section .ligne .colonne_javascript {
+    background-image: url(images/image_javascript.jpg);
+} 
+
+section .ligne .colonne_cplusplus {
+    background-image: url(images/image_cplusplusmobile.jpg);
 } 
 
 section .ligne .background_web {
@@ -354,6 +362,10 @@ section .ligne .background_cplus {
 
 section .ligne .background_web_dyna {
     background-image: url(images/image_dyna_rea.png);
+} 
+
+section .ligne .background_php {
+    background-image: url(images/image_PHP.png);
 } 
 
 section .ligne .background_others {
